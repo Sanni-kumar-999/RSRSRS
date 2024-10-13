@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="101.css">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Your Result</h1>
+        <img id="resultImage" src="" alt="Student Result">
+        <a id="downloadButton" href="" download>Download</a>
+    </div>
+    <script>
+        // Get the URL parameters from the previous page
+        const urlParams = new URLSearchParams(window.location.search);
+        const imagePath = urlParams.get('image');
+
+        // Set the image source and download link
+        document.getElementById('resultImage').src = imagePath;
+        document.getElementById('downloadButton').href = imagePath;
+    </script>
+</body>
+</html>

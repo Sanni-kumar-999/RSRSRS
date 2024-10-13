@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="2023.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="2023.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#course">COURSE</a></li>
+                    <li><a href="101.html">TEST</a></li>  
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>RS Tutorial</h1>
+
+            <p>A tradition of excellence</p>
+            <br>
+            <a href="101.html" class="hero-btn">Click Here</a>
+        </div>
+    </section>    
+
+    <section class="course" id="course">
+        <h1>Courses We Offer</h1>
+        <p>We provide expert coaching for students in grades 9, 10, 11, and 12, offering comprehensive courses in key subjects to help them excel academically. <br>Our experienced instructors focus on personalized attention, in-depth learning, and exam preparation to ensure success in board exams and competitive entrance tests. Join us to build a strong foundation for your future!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>9 & 10</h3>
+                <p>Expert coaching for classes 9 & 10 with personalized attention and comprehensive study materials. Achieve academic success!</p>
+            </div>
+            <div class="course-col">
+                <h3>Class 11</h3>
+                <p>Class 11 PCM/PCB coaching: Master concepts with expert guidance, tailored study plans, and focused academic support!</p>
+            </div>
+            <div class="course-col">
+                <h3>Class 12</h3>
+                <p>Class 12 PCM/PCB coaching: Excel with expert guidance, targeted study plans, and in-depth exam preparation!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="foter">
+        <div class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                  <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <footer class="about" id="about">
+        <div class="headline">
+            <h1>About Us</h1><br>
+            <p>We are committed educators focused on inspiring students to excel in their studies. <br>Our mission is to create engaging learning experiences that unlock each student's full potential.</p>
+        </div>
+        <div class="social-buttons">
+            <a href="http://www.facebook.com" target="blank" class="social-margin">
+                <div class="social-icon facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> 
+                </div>
+            </a>
+            <a href="https://pinterest.com/" target="blank"  class="social-margin">
+                <div class="social-icon pinterest">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="http://linkedin.com/" class="social-margin" target="blank">
+                <div class="social-icon linkedin">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div> 
+            </a>
+            <a href="http://youtube.com/" target="blank"  class="social-margin">
+                <div class="social-icon youtube">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </div> 
+            </a>
+            <a href="https://behance.com/"  target="blank" class="social-margin">
+                <div class="social-icon behance">
+                  <i class="fa fa-behance" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="http://twitter.com/" target="blank" class="social-margin">
+                <div class="social-icon twitter">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div> 
+            </a>
+        </div>
+    </footer>
+
+    <!--JavaScript for Toggle Menu Part-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function ShowMenu(){
+            navLinks.style.right = "0";
+        }
+        function HideMenu(){
+        navLinks.style.right = "200px";
+        }
+    </script>
+</body>
+</html>
